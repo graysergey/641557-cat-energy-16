@@ -1,0 +1,18 @@
+.copyright {
+  display: flex;
+  padding: 20px 0;
+}
+
+.copyright__company {
+  padding: 10px 0;
+
+  font-family: "Arial", "Tahoma", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $text;
+}
+
+.copyright__logo {
+  display: block;
+  margin: 0 0 0 auto;
+}

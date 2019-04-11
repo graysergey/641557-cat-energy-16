@@ -1,0 +1,25 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+
+  border-bottom: 1px solid $darkgray;
+  list-style: none;
+}
+
+.social__item {
+  margin: 0 17px;
+}
+
+.social__item--facebook {
+  margin: 0 23px;
+}
+
+.social__link {
+  display: inline-block;
+  vertical-align: middle;
+}

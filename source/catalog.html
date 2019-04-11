@@ -2,24 +2,26 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <nav class="page-header__nav">
-        <a class="page-header__logo-link" href="index.html">
-          <img width="191" height="38" src="/" alt="Логотип компании CAT ENERGY">
+        <a class="logo" href="index.html">
+          <img width="191" height="38" src="./img/logo-mobile.svg" alt="Логотип компании CAT ENERGY">
         </a>
-        <ul class="main-menu">
-          <li class="main-menu__item"><a>Главная</a></li>
-          <li class="main-menu__item"><a href="catalog.html">Каталог продукции</a></li>
-          <li class="main-menu__item"><a href="form.html">Подбор программы</a></li>
+        <ul class="page-header__main-menu main-menu">
+          <li class="main-menu__item"><a class="main-menu__link" href="index.html">Главная</a></li>
+          <li class="main-menu__item"><a class="main-menu__link">Каталог продукции</a></li>
+          <li class="main-menu__item"><a class="main-menu__link" href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
       <button class="page-header__toggle-menu" type="button" aria-label="Переключатель открытия и закрытия меню"></button>
     </header>
 
-    <main class="page-main">
+    <main class="page-main container">
       <section class="catalog">
         <h1 class="catalog__title">Каталог продукции</h1>
         <ul class="catalog__list">
@@ -228,29 +230,48 @@
       </section>
 
       <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__offer">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-        <a href="https://www.google.com/maps"><img width="320" height="362" src="/" alt="Мы на карте"></a>
-      </section>
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </section>
+
+        <section class="map">
+          <h2 class="visually-hidden">Мы на карте</h2>
+          <a class="map__link" href="https://www.google.com/maps"><img class="map__img" width="320" height="362" src="./img/bg-map-mobile@1x.png" alt="Мы на карте"></a>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653069.3199859555!2d80.13034990287345!3d7.593872665672541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri+Lanka!5e0!3m2!1sen!2sua!4v1554993446364!5m2!1sen!2sua" allowfullscreen></iframe>
+        </section>
     </main>
 
-    <footer class="page-footer">
-      <a class="page-footer__logo logo">
-        <img width="128" height="24" src="/" alt="Логотип компании">
-      </a>
+    <footer class="page-footer container">
+        <a class="page-footer__logo logo-footer">
+          <img width="128" height="24" src="./img/logo-footer.svg" alt="Логотип компании">
+        </a>
 
-      <ul class="page-footer__social social">
-        <li class="social__item social__item--vkontakte"></li>
-        <li class="social__item social__item--instagram"></li>
-        <li class="social__item social__item--facebook"></li>
-      </ul>
+        <ul class="page-footer__social social">
+          <li class="social__item social__item--vkontakte">
+            <a class="social__link" href="vk.com">
+              <img src="./img/icon-vk-mobile.svg" alt="мы в конткате" width="22" height="12">
+            </a>
+          </li>
+          <li class="social__item social__item--instagram">
+            <a class="social__link" href="fb.com">
+              <img src="./img/icon-insta-mobile.svg" alt="мы в инстаграме" width="16" height="16">
+            </a>
+          </li>
+          <li class="social__item social__item--facebook">
+            <a class="social__link" href="instagram.com">
+              <img src="./img/icon-fb-mobile.svg" alt="мы в фейсбуке" width="10" height="19">
+            </a>
+          </li>
+        </ul>
 
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__company" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive"></a>
-      </div>
-    </footer>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__company" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img src="./img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
+          </a>
+        </div>
+      </footer>
 
   </body>
 </html>

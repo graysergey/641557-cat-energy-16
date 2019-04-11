@@ -1,0 +1,34 @@
+.example {
+  height: 705px;
+  display: flex;
+  flex-direction: column;
+
+  background-color: $lightgray;
+}
+
+.example__title {
+  margin: 19px 10px 0 0;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+.example__text {
+  margin: 23px 10px 0 0;
+
+  font-family: "Arial", "Arial-narrow", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: $text;
+}
+
+.example__result {
+  margin: 23px auto 0;
+}
+
+.example__before-wrapper {
+  display: block;
+  margin: 33px 0 0 -20px;
+}

@@ -1,6 +1,10 @@
 .contacts {
   display: flex;
   padding: 27px 20px;
+
+  &--gray {
+    background-color: $lightgray;
+  }
 }
 
 .contacts__offer {

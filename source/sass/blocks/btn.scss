@@ -1,0 +1,13 @@
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding: 11px;
+
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: $lightgreen;
+}

@@ -1,0 +1,54 @@
+.form-advice {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 25px 0 3px 0;
+  border: none;
+}
+
+.form-advice label {
+  position: relative;
+  margin: 0 0 25px 46px;
+
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
+
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: -46px;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 30px;
+    height: 30px;
+
+    content: "";
+
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+}
+
+.form-advice input:checked + label {
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: -37px;
+    transform: translateY(-50%);
+
+    display: block;
+    width: 12px;
+    height: 12px;
+
+    content: "";
+
+    background-color: $lightgreen;
+    border-radius: 50%;
+  }
+}

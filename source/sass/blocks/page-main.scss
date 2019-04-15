@@ -6,6 +6,8 @@
   margin: 0 0 17px 0;
 }
 
-// .page-main__advantages {
-//   margin: 0 0 20px 0;
-// }
+@media (min-width: $tablet-width) {
+  .page-main__offer {
+    margin: 0;
+  }
+}

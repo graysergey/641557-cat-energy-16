@@ -44,3 +44,51 @@
 .offer__link {
   margin: 0 20px 0 20px;
 }
+
+@media (min-width: $tablet-width) {
+  .offer {
+    position: relative;
+  }
+
+  .offer__img-wrapper {
+    background: transparent;
+  }
+
+  .offer__title {
+    width: 79%;
+    margin: 60px 0 45px 0;
+    padding: 0 0 0 90px;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $lightblack;
+  }
+
+  .offer__slogan {
+    margin: 0 0 155px 0;
+    padding: 0 0 0 90px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $lightblack;
+  }
+
+  .offer__img {
+    width: 709px;
+    height: 609px;
+  }
+
+  .offer__link {
+    position: absolute;
+    bottom: 525px;
+
+    display: inline-block;
+    margin: 0 30px 0 120px;
+    padding: 16px 27px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

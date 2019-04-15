@@ -6,3 +6,11 @@
 
   border-bottom: 1px solid $darkgray;
 }
+
+@media (min-width: $tablet-width) {
+  .logo-footer {
+    align-self: center;
+    padding: 60px 0;
+    border: none;
+  }
+}

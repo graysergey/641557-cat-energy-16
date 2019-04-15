@@ -1,8 +1,6 @@
 .btn {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-
   padding: 11px;
 
   text-transform: uppercase;
@@ -10,4 +8,10 @@
   color: #ffffff;
 
   background-color: $lightgreen;
+}
+
+@media (min-width: $tablet-width) {
+  .btn {
+    padding: 11px 27px;
+  }
 }

@@ -27,3 +27,9 @@
   line-height: 20px;
   color: $text;
 }
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    height: 201px;
+  }
+}

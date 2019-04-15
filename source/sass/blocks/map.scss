@@ -39,3 +39,13 @@
 
   border: none;
 }
+
+@media (min-width: $tablet-width) {
+  .map {
+    height: 396px;
+  }
+
+  .map__img {
+    margin: 0;
+  }
+}

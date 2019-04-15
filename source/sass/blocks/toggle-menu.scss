@@ -9,3 +9,9 @@
   border: none;
   background-color: #111111;
 }
+
+@media (min-width: $tablet-width) {
+  .toggle-menu {
+    display: none;
+  }
+}

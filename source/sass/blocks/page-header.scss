@@ -12,3 +12,26 @@
   top: 20px;
   right: 20px;
 }
+
+.page-header__logo {
+  margin: 0 0 13px 0;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    border-bottom: none;
+  }
+
+  .page-header__logo {
+    margin: 0 0 auto 0;
+  }
+
+  .page-header__nav {
+    display: flex;
+    padding: 27px 0 0 0;
+  }
+
+  .page-header__main-menu {
+    margin: 0 -11px 0 auto;
+  }
+}

@@ -8,7 +8,7 @@
   color: #ffffff;
 }
 
-.offer__img-wrapper {
+.offer__text-wrapper {
   min-height: 305px;
   background: url("../../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -48,16 +48,20 @@
 @media (min-width: $tablet-width) {
   .offer {
     position: relative;
+    min-height: 608px;
+    padding: 64px 0 0 120px;
   }
 
-  .offer__img-wrapper {
+  .offer__text-wrapper {
+    min-height: auto;
+
     background: transparent;
+    border: none;
   }
 
   .offer__title {
     width: 79%;
-    margin: 60px 0 45px 0;
-    padding: 0 0 0 90px;
+    margin: 0 0 40px 0;
 
     font-size: 60px;
     line-height: 60px;
@@ -66,8 +70,7 @@
   }
 
   .offer__slogan {
-    margin: 0 0 155px 0;
-    padding: 0 0 0 90px;
+    margin: 0 5% 49px 0;
 
     font-size: 20px;
     line-height: 20px;
@@ -76,19 +79,53 @@
   }
 
   .offer__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
     width: 709px;
     height: 609px;
+    margin: 0 auto 0 auto;
+
+    z-index: -1;
   }
 
   .offer__link {
-    position: absolute;
-    bottom: 525px;
-
     display: inline-block;
-    margin: 0 30px 0 120px;
+    margin: 0 0 530px 0;
     padding: 16px 27px;
 
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer {
+    max-width: 1300px;
+    padding-top: 57px;
+    outline: 1px dashed lightblue;
+  }
+
+  .offer__title {
+    width: 40%;
+  }
+
+  .offer__slogan {
+    width: 40%;
+    margin-bottom: 53px;
+  }
+
+  .offer__link {
+    margin-bottom: 266px;
+  }
+
+  .offer__img {
+    top: 0;
+    left: 40%;
+
+    width: 552px;
+    height: 499px;
+    margin: -20px 0 0 0;
   }
 }

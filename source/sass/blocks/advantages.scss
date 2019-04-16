@@ -72,7 +72,7 @@
   }
 
   .advantages__title {
-    margin: 45px 0 70px 0;
+    margin: 0 0 70px 0;
     padding: 0 30px;
 
     font-size: 60px;
@@ -99,6 +99,7 @@
     flex-direction: column;
     align-items: flex-start;
     flex-grow: 1;
+    flex-basis: 50%;
 
     max-width: 50%;
     min-height: 235px;
@@ -126,5 +127,25 @@
 
       z-index: -1;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    width: 1300px;
+  }
+
+  .advantages__item {
+    flex-basis: auto;
+    max-width: 25%;
+    padding: 0 40px;
+
+    &::after {
+      left: 155px;
+    }
+  }
+
+  .advantages__title {
+    padding: 0 40px;
   }
 }

@@ -1,12 +1,14 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
-
   background-color: $lightgray;
 }
 
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
   }

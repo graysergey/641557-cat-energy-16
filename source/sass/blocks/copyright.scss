@@ -16,3 +16,12 @@
   display: block;
   margin: 0 0 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    align-self: center;
+
+    min-width: 165px;
+    padding: 55px 0;
+  }
+}

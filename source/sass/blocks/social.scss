@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 
   width: 100%;
   margin: 0;
@@ -22,4 +23,11 @@
 .social__link {
   display: inline-block;
   vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: auto;
+    padding: 60px 0;
+  }
 }

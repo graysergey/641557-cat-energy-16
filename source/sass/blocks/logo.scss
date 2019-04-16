@@ -1,3 +1,9 @@
 .logo {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    height: 58px;
+  }
+}

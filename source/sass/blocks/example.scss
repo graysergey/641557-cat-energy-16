@@ -1,9 +1,14 @@
-.example {
+.example__wrapper {
   height: 705px;
   display: flex;
   flex-direction: column;
 
   background-color: $lightgray;
+}
+
+.example__column {
+  display: flex;
+  flex-direction: column;
 }
 
 .example__title {
@@ -34,6 +39,50 @@
 
 @media (min-width: $tablet-width) {
   .example {
-    height: 1025px;
+    background: linear-gradient(to bottom, #ffffff 620px, $lightgray 620px, $lightgray 100%);
+  }
+
+  .example__wrapper {
+    height: 1082px;
+    border-top: 1px solid #e6e6e6;
+    background: transparent;
+  }
+
+  .example__title {
+    margin: 0;
+    padding: 47px 0 40px 0;
+    font-size: 60px;
+  }
+
+  .example__text {
+    margin-bottom: 52px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .example__result {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    background: linear-gradient(to bottom, #ffffff 189px, $lightgray 189px, $lightgray 100%);
+  }
+
+  .example__wrapper {
+    height: auto;
+    flex-direction: row;
+  }
+
+  .example__title {
+    padding-top: 53px;
+    padding-bottom: 76px;
+  }
+
+  .example__text {
+    max-width: 438px;
+    margin: 70px 0 68px 0;
   }
 }

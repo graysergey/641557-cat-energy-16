@@ -1,0 +1,11 @@
+@media (min-width: $desktop-width) {
+  .map-wrapper {
+    position: relative;
+  }
+
+  .map-wrapper__contacts {
+    position: absolute;
+    top: 95px;
+    left: 110px;
+  }
+}

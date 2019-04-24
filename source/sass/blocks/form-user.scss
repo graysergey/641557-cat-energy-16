@@ -44,3 +44,49 @@
     color: $text;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form-user {
+    padding: 0 35px 53px 40px;
+  }
+
+  .form-user__label {
+    margin: 0 0 20px 0;
+  }
+
+  .form-user__name,
+  .form-user__weight,
+  .form-user__age {
+    margin: 0 15px 0 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form-user__input-name,
+  .form-user__input-weight,
+  .form-user__input-age {
+    min-width: 167px;
+    margin: 0 0 0 0;
+    padding: 10px 18px 10px 18px;
+
+    font-size: 20px;
+    line-height: 20px;
+
+    &::placeholder {
+      text-transform: uppercase;
+      color: $text;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-user {
+    width: 46.6%;
+    padding: 0;
+  }
+
+  .form-user__label:last-of-type {
+    margin: 0;
+  }
+}

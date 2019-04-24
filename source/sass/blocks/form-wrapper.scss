@@ -5,3 +5,26 @@
 .form-wrapper__form-text {
   margin: 23px 0 0 0;
 }
+
+@media (min-width: $tablet-width) {
+  .form-wrapper__form-title {
+    margin: 0 0 55px 0;
+    font-size: 60px;
+  }
+
+  .form-wrapper__form-text {
+    width: 50%;
+    margin: 0 0 66px 40px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-wrapper__form-text {
+    width: 27%;
+    margin: 0 0 65px 0;
+    padding: 0;
+  }
+}

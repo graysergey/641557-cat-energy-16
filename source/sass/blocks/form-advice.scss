@@ -81,3 +81,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-advice {
+    width: 46.5%;
+  }
+}

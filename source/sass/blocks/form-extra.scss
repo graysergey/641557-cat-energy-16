@@ -120,3 +120,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-extra label {
+    width: 15.2%;
+  }
+}

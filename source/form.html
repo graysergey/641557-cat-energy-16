@@ -21,48 +21,52 @@
       <button class="page-header__toggle-menu" type="button" aria-label="Переключатель открытия и закрытия меню"></button>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--form">
       <section class="form-wrapper container">
         <h1 class="form-wrapper__form-title form-title">Подбор программы</h1>
         <p class=" form-wrapper__form-text form-text">Заполните анкету и мы подберем программу питания для вашего кота</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="form__user form-user">
-            <h2 class="visually-hidden">Заполните ваши данные</h2>
-            <label class="form-user__label">
-              <span class="form-user__name">Имя:*</span>
-              <input class="form-user__input-name" type="text" name="name" placeholder="Барсик" required>
-            </label>
-            <label class="form-user__label">
-              <span class="form-user__weight">Вес (кг):*</span>
-              <input class="form-user__input-weight" type="text" name="weight" placeholder="7" required>
-            </label>
-            <label class="form-user__label">
-              <span class="form-user__age">Возраст&nbsp;(лет):*</span>
-              <input class="form-user__input-age" type="text" name="age" placeholder="7" required>
-            </label>
-          </fieldset>
+          <div class="form__container">
+            <fieldset class="form__user form-user">
+              <h2 class="visually-hidden">Заполните ваши данные</h2>
+              <label class="form-user__label">
+                <span class="form-user__name">Имя:*</span>
+                <input class="form-user__input-name" type="text" name="name" placeholder="Барсик" required>
+              </label>
+              <label class="form-user__label">
+                <span class="form-user__weight">Вес (кг):*</span>
+                <input class="form-user__input-weight" type="text" name="weight" placeholder="7" required>
+              </label>
+              <label class="form-user__label">
+                <span class="form-user__age">Возраст&nbsp;(лет):*</span>
+                <input class="form-user__input-age" type="text" name="age" placeholder="7" required>
+              </label>
+            </fieldset>
 
-          <fieldset class="form__advice form-advice">
-            <h2 class="visually-hidden">Выберите категорию товара</h2>
-            <input class="visually-hidden" type="radio" id="slim" name="program-selection" value="slim" checked>
-            <label class="form-advice__slim" for="slim">Похудение</label>
-            <input class="visually-hidden" type="radio" id="muscules" name="program-selection" value="muscles">
-            <label class="form-advice__muscles" for="muscules">Набор массы</label>
-            <input class="visually-hidden" type="radio" id="advice" name="program-selection" value="advice">
-            <label class="form-advice__advice" for="advice">Не знаю (Нужен ваш совет)</label>
-          </fieldset>
+            <fieldset class="form__advice form-advice">
+              <h2 class="visually-hidden">Выберите категорию товара</h2>
+              <input class="visually-hidden" type="radio" id="slim" name="program-selection" value="slim" checked>
+              <label class="form-advice__slim" for="slim">Похудение</label>
+              <input class="visually-hidden" type="radio" id="muscules" name="program-selection" value="muscles">
+              <label class="form-advice__muscles" for="muscules">Набор массы</label>
+              <input class="visually-hidden" type="radio" id="advice" name="program-selection" value="advice">
+              <label class="form-advice__advice" for="advice">Не знаю (Нужен ваш совет)</label>
+            </fieldset>
+          </div>
 
           <fieldset class="form__contacts form-contacts">
             <p class="form-contacts__title">Контактные данные (владельца кота)</p>
-            <label class="form-contacts__label">
-              <span class="form-contacts__email">E-mail:*</span>
-              <input class="form-contacts__email-input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
-            </label>
-            <label class="form-contacts__label">
-              <span class="form-contacts__tel">Телефон:*</span>
-              <input class="form-contacts__input-tel" type="email" name="tel" placeholder="8 (960) 900-60-90" required>
-            </label>
+            <div class="form-contacts__container">
+              <label class="form-contacts__label">
+                <span class="form-contacts__email">E-mail:*</span>
+                <input class="form-contacts__email-input" type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              </label>
+              <label class="form-contacts__label">
+                <span class="form-contacts__tel">Телефон:*</span>
+                <input class="form-contacts__input-tel" type="email" name="tel" placeholder="8 (960) 900-60-90" required>
+              </label>
+            </div>
           </fieldset>
 
           <fieldset class="form__comments form-comments">
@@ -90,17 +94,19 @@
         </form>
       </section>
 
-      <section class="contacts contacts--gray">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 <span class="contacts__sity">Санкт-Петербург</span></p>
-      </section>
+      <div class="map-wrapper">
+        <section class="map-wrapper__contacts contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 <span class="contacts__sity">Санкт-Петербург</span></p>
+        </section>
 
-      <section class="map">
-        <h2 class="visually-hidden">Мы на карте</h2>
-        <a class="map__link" href="https://www.google.com/maps"><img class="map__img" width="320" height="362" src="./img/bg-map-mobile@1x.png" alt="Мы на карте"></a>
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653069.3199859555!2d80.13034990287345!3d7.593872665672541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri+Lanka!5e0!3m2!1sen!2sua!4v1554993446364!5m2!1sen!2sua" allowfullscreen></iframe>
-      </section>
+        <section class="map">
+          <h2 class="visually-hidden">Мы на карте</h2>
+          <a class="map__link" href="https://www.google.com/maps"><img class="map__img" width="320" height="362" src="./img/bg-map-mobile@1x.png" alt="Мы на карте"></a>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653069.3199859555!2d80.13034990287345!3d7.593872665672541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri+Lanka!5e0!3m2!1sen!2sua!4v1554993446364!5m2!1sen!2sua" allowfullscreen></iframe>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">

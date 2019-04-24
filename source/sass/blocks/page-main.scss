@@ -14,6 +14,10 @@
   .page-main__offer {
     margin: 0 auto;
   }
+
+  .page-main--form {
+    padding: 55px 0 0 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -23,5 +27,9 @@
 
   .page-main__advantages {
     margin: 0 auto;
+  }
+
+  .page-main--form {
+    padding: 22px 0 0 0;
   }
 }

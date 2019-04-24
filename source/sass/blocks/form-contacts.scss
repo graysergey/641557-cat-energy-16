@@ -100,3 +100,29 @@
     line-height: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .form-contacts {
+    flex-direction: row;
+  }
+
+  .form-contacts__container {
+    display: flex;
+  }
+
+  .form-contacts__title {
+    margin-bottom: 77px;
+  }
+
+  .form-contacts__label {
+    width: 46.7%;
+  }
+
+  .form-contacts__label:first-child {
+    margin: 0 40px 0 0;
+  }
+
+  .form-contacts__label:last-child {
+    margin: 0 0 0 40px;
+  }
+}

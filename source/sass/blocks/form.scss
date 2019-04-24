@@ -15,10 +15,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .form__user {
-    padding: 0 35px 53px 40px;
-  }
-
   .form__advice {
     margin: 0 35px 47px 40px;
   }
@@ -38,7 +34,7 @@
   .form__submit {
     display: inline-block;
     width: 40.1%;
-    margin: 0 60px 72px 40px;
+    margin: 0 8% 72px 40px;
     padding: 15px 27px;
 
     font-size: 20px;
@@ -53,5 +49,37 @@
     margin: auto;
 
     font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form__container {
+    display: flex;
+    margin: 0 0 40px 0;
+  }
+
+  .form__user {
+    margin: 0 40px 0 0;
+  }
+
+  .form__advice {
+    margin: 0 0 0 40px;
+  }
+
+  .form__contacts {
+    margin: 0 0 53px 0;
+  }
+
+  .form__comments {
+    margin: 0 0 38px 0;
+  }
+
+  .form__extra {
+    margin: 0 0 16px 0;
+  }
+
+  .form__submit {
+    width: 46.7%;
+    margin: 0 6.4% 83px 0;
   }
 }

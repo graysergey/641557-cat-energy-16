@@ -43,7 +43,7 @@
             </label>
           </fieldset>
 
-          <fieldset class="form-advice form-advice">
+          <fieldset class="form__advice form-advice">
             <h2 class="visually-hidden">Выберите категорию товара</h2>
             <input class="visually-hidden" type="radio" id="slim" name="program-selection" value="slim" checked>
             <label class="form-advice__slim" for="slim">Похудение</label>
@@ -69,29 +69,31 @@
             <label class="form-comments__title" for="textarea">
               Комментарий
             </label>
-            <textarea class="form-comments__textarea" id="textarea" name="comments" rows="7" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <textarea class="form-comments__textarea" id="textarea" name="comments" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="form__extra form-extra">
             <h2 class="form-extra__title">Дополнительно</h2>
-            <input class="visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
-            <label class="form-extra__sweetener" for="sweetener">Сахарозаменитель</label>
-            <input class="visually-hidden" type="checkbox" id="water" name="water">
-            <label class="form-extra__water" for="water">Питьевая вода</label>
-            <input class="visually-hidden" type="checkbox" id="milk" name="milk">
-            <label class="form-extra__milk" for="milk">Молоко</label>
-            <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins">
-            <label class="form-extra__vitamins" for="vitamins">Витамины</label>
+            <div class="form-extra__wrapper">
+              <input class="visually-hidden" type="checkbox" id="sweetener" name="sweetener" checked>
+              <label class="form-extra__sweetener" for="sweetener">Сахарозаменитель</label>
+              <input class="visually-hidden" type="checkbox" id="water" name="water">
+              <label class="form-extra__water" for="water">Питьевая вода</label>
+              <input class="visually-hidden" type="checkbox" id="milk" name="milk">
+              <label class="form-extra__milk" for="milk">Молоко</label>
+              <input class="visually-hidden" type="checkbox" id="vitamins" name="vitamins">
+              <label class="form-extra__vitamins" for="vitamins">Витамины</label>
+            </div>
           </fieldset>
           <button class="form__submit btn" type="submit">Отправить заявку</button>
-          <p class="form__need-info">* — Обязательные поля</p>
+          <p class="form__required-text">* — Обязательные поля</p>
         </form>
       </section>
 
       <section class="contacts contacts--gray">
         <h2 class="visually-hidden">Наши контакты</h2>
         <p class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 <span class="contacts__sity">Санкт-Петербург</span></p>
       </section>
 
       <section class="map">

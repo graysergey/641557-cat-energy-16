@@ -71,3 +71,32 @@
     color: $text;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .form-contacts__title {
+    margin: 0 78px 75px 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-contacts__label {
+    margin: 20px 0;
+  }
+
+  .form-contacts__email,
+  .form-contacts__tel {
+    margin: 0 17px 0 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form-contacts__email-input,
+  .form-contacts__input-tel {
+    padding: 10px 55px 10px 18px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

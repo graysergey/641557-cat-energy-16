@@ -1,11 +1,14 @@
 .form-extra {
   position: relative;
-  display: flex;
-  flex-direction: column;
 
   margin: 0;
   padding: 25px 0 3px 0;
   border: none;
+}
+
+.form-extra__wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .form-extra__title {
@@ -80,5 +83,40 @@
 
     border-bottom: 1px solid $lightgreen;
     border-left: 1px solid $lightgreen;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-extra__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form-extra__title {
+    margin: 0 116px 65px 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-extra label {
+    width: 36%;
+    margin: 0 0 54px 60px;
+    font-size: 20px;
+    line-height: 20px;
+
+    &::before {
+      left: -60px;
+
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  .form-extra input:checked + label {
+    &::after {
+      left: -49px;
+    }
   }
 }

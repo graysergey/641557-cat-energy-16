@@ -37,6 +37,8 @@
 
 .form-comments__textarea {
   width: 100%;
+  min-height: 150px;
+  margin: 0 0 4px 0;
   padding: 12px 12px 12px 15px;
 
   border: 1px solid #cdcdcd;
@@ -44,5 +46,21 @@
   &::placeholder {
     text-transform: uppercase;
     color: $text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-comments__title {
+    margin: 0 138px 76px 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .form-comments__textarea {
+    min-height: 174px;
+    padding: 10px 20px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 }

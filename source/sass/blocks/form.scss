@@ -3,7 +3,7 @@
   margin: 10px 0 0 0;
 }
 
-.form__need-info {
+.form__required-text {
   margin: 20px 0 32px 0;
 
   font-family: "Arial", "Tahoma", sans-serif;
@@ -12,4 +12,46 @@
   line-height: 16px;
   text-align: center;
   color: $text;
+}
+
+@media (min-width: $tablet-width) {
+  .form__user {
+    padding: 0 35px 53px 40px;
+  }
+
+  .form__advice {
+    margin: 0 35px 47px 40px;
+  }
+
+  .form__contacts {
+    margin: 0 35px 30px 40px;
+  }
+
+  .form__comments {
+    margin: 0 35px 37px 40px;
+  }
+
+  .form__extra {
+    margin: 0 35px 5px 40px;
+  }
+
+  .form__submit {
+    display: inline-block;
+    width: 40.1%;
+    margin: 0 60px 72px 40px;
+    padding: 15px 27px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .form__required-text {
+    position: relative;
+    top: -5px;
+
+    display: inline-block;
+    margin: auto;
+
+    font-size: 16px;
+  }
 }

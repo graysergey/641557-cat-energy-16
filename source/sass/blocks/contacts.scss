@@ -30,6 +30,42 @@
 
 @media (min-width: $tablet-width) {
   .contacts {
-    height: 201px;
+    justify-content: space-between;
+    padding: 65px 72px 57px 72px;
+  }
+
+  .contacts__offer {
+    max-width: 190px;
+
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__addres {
+    max-width: 190px;
+
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+  }
+
+  .contacts__sity {
+    display: inline-block;
+    margin-top: 19px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: 570px;
+    padding: 65px 72px 57px 75px;
+
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  .contacts__addres {
+    padding: 0 0 0 17px;
+    text-align: left;
   }
 }

@@ -109,6 +109,7 @@
     content: "";
 
     background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -116,4 +117,124 @@
   width: 170px;
   margin: 62px auto 40px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .extra-products__item {
+    padding: 25px 37px 28px 38px;
+    border: 1px solid #cdcdcd;
+
+    &:not(:last-child) {
+      border-bottom: none;
+    }
+  }
+
+  .extra-products__title {
+    font-size: 36px;
+    line-height: 36px;
+
+    border: none;
+  }
+
+  .extra-products__subtitle {
+    display: inline-block;
+    width: 45%;
+    margin: 0 0 25px 0;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .extra-products__table {
+    float: right;
+    width: auto;
+    margin: 5px 0 0 0;
+  }
+
+  .extra-products__property {
+    margin: 0 0 0 auto;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra-products__value {
+    margin: 0 auto 0 53px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .extra-products__present {
+    flex-direction: row;
+    min-height: 200px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+
+    &::before {
+      margin: auto 0 auto 90px;
+    }
+  }
+
+  .extra-products__present-text {
+    margin: auto 0 auto 39%;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .extra-products__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra-products__item {
+    display: flex;
+
+    padding: 15px 0 16px 0;
+  }
+
+  .extra-products__subtitle {
+    width: 250px;
+    margin: 0;
+  }
+
+  .extra-products__table {
+    width: 286px;
+    margin: 0 38px 0 75px;
+  }
+
+  .extra-products__value {
+    margin: 0 0 0 auto;
+  }
+
+  .extra-products__property {
+    margin: 0 auto 0 0;
+  }
+
+  .extra-products__link {
+    width: 245px;
+    margin: 0 0 0 auto;
+
+    line-height: 20px;
+  }
+
+  .extra-products__present {
+    flex-direction: column;
+
+    width: 245px;
+    min-height: 289px;
+    margin: 0;
+
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    &::before {
+      margin: 65px auto;
+    }
+  }
+
+  .extra-products__present-text {
+    margin: 0 auto;
+    text-align: center;
+  }
 }

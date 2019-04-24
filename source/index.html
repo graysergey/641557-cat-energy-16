@@ -67,54 +67,60 @@
         </ul>
       </section>
 
-      <section class="example container">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <table class="example__result result">
-          <caption class="result__subtitle">Затраты на питание: 15 000 руб.</caption>
-          <tbody class="result__tbody">
-            <tr>
-              <td class="result__total">5 кг</td>
-              <td class="result__total">60 дней</td>
-            </tr>
-            <tr>
-              <td>
-                <span class="result__text">Снижение веса</span>
-              </td>
-              <td>
-                <span class="result__text">Затрачено времени</span>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div class="example__slider slider">
-          <div class="slider__before-wrapper">
-            <img class="slider__before-img" src="./img/before-mobile@1x.png" alt="до использования продукции" width="320" height="240">
+      <section class="example">
+        <div class="example__wrapper container">
+          <div class="example__column">
+            <h2 class="example__title">Живой пример</h2>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+            <table class="example__result result">
+              <caption class="result__subtitle">Затраты на питание: <span class="result__price">15 000 руб.</span></caption>
+              <tbody class="result__tbody">
+                <tr>
+                  <td class="result__total">5 кг</td>
+                  <td class="result__total">60 дней</td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="result__text">Снижение веса</span>
+                  </td>
+                  <td>
+                    <span class="result__text">Затрачено времени</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-          <div class="slider__after-img"></div>
-          <div>
-            <input type="radio" id="slider-before" name="example-before">
-            <label for="slider-before">Было</label>
+          <div class="example__slider slider">
+            <div class="slider__before-wrapper">
+              <img class="slider__before-img" src="./img/before-mobile@1x.png" alt="до использования продукции" width="320" height="240">
+            </div>
+            <div class="slider__after-img"></div>
+            <div>
+              <input type="radio" id="slider-before" name="example-before">
+              <label for="slider-before">Было</label>
 
-            <input type="radio" id="slider-after" name="example-after">
-            <label for="slider-after">Стало</label>
+              <input type="radio" id="slider-after" name="example-after">
+              <label for="slider-after">Стало</label>
 
-            <div class="slider__bar"></div>
+              <div class="slider__bar"></div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <p class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
-        <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-      </section>
+      <div class="map-wrapper">
+        <section class="map-wrapper__contacts contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <p class="contacts__offer">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+          <p class="contacts__addres">ул. Большая Конюшенная, д. 19/8 <span class="contacts__sity">Санкт-Петербург</span></p>
+        </section>
 
-      <section class="map">
-        <h2 class="visually-hidden">Мы на карте</h2>
-        <a class="map__link" href="https://www.google.com/maps"><img class="map__img" width="320" height="362" src="./img/bg-map-mobile@1x.png" alt="Мы на карте"></a>
-        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653069.3199859555!2d80.13034990287345!3d7.593872665672541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri+Lanka!5e0!3m2!1sen!2sua!4v1554993446364!5m2!1sen!2sua" allowfullscreen></iframe>
-      </section>
+        <section class="map">
+          <h2 class="visually-hidden">Мы на карте</h2>
+          <a class="map__link" href="https://www.google.com/maps"><img class="map__img" width="320" height="362" src="./img/bg-map-mobile@1x.png" alt="Мы на карте"></a>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653069.3199859555!2d80.13034990287345!3d7.593872665672541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri+Lanka!5e0!3m2!1sen!2sua!4v1554993446364!5m2!1sen!2sua" allowfullscreen></iframe>
+        </section>
+      </div>
     </main>
 
     <footer class="page-footer">

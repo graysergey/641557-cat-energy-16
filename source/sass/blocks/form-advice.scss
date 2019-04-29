@@ -32,23 +32,48 @@
     border: 1px solid #cdcdcd;
     border-radius: 50%;
   }
+
+  &:hover {
+    &::before {
+      border: 1px solid #bababa;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
-.form-advice input:checked + label {
-  &::after {
-    position: absolute;
-    top: 50%;
-    left: -37px;
-    transform: translateY(-50%);
 
-    display: block;
-    width: 12px;
-    height: 12px;
+.form-advice input {
+  &:checked + label {
+    &::after {
+      position: absolute;
+      top: 50%;
+      left: -37px;
+      transform: translateY(-50%);
 
-    content: "";
+      display: block;
+      width: 12px;
+      height: 12px;
 
-    background-color: $lightgreen;
-    border-radius: 50%;
+      content: "";
+
+      background-color: $lightgreen;
+      border-radius: 50%;
+    }
+  }
+
+  &:active + label {
+    opacity: 0.3;
+  }
+
+  &:focus + label {
+    opacity: 0.3;
   }
 }
 

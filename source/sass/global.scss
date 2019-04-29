@@ -14,10 +14,23 @@ body {
   background-color: #ffffff;
 }
 
+a {
+  text-decoration: none;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+input[type="text"]:required:active,
+input[type="text"]:required:focus,
+input[type="email"]:required:active,
+input[type="email"]:required:focus,
+input[type="tel"]:required:active,
+input[type="tel"]:required:focus {
+  outline: 2px solid $error;
 }
 
 .visually-hidden {
@@ -29,8 +42,4 @@ body {
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-a {
-  text-decoration: none;
 }

@@ -41,11 +41,23 @@
   margin: 0 0 4px 0;
   padding: 12px 12px 12px 15px;
 
-  border: 1px solid #cdcdcd;
+  border: 1px solid rgba(205, 205, 205, 0.5);
 
   &::placeholder {
     text-transform: uppercase;
     color: $text;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    outline: 2px solid #444444;
+  }
+
+  &:focus {
+    outline: 2px solid #444444;
   }
 }
 

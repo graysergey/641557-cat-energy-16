@@ -38,11 +38,24 @@
 }
 
 .categories__link {
-  display: block;
-  margin: 17px 0 0 0;
+  display: inline-block;
+  margin: 17px auto 0 0;
 
   text-transform: uppercase;
   color: $lightblack;
+
+  &:hover .categories__arrow {
+    width: 33px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .categories__arrow {
@@ -51,7 +64,7 @@
   height: 11px;
   margin: 0 0 0 12px;
 
-  background-image: url("../../img/icon-right-arrow-long.svg");
+  background-image: url("../img/icon-right-arrow-long.svg");
   background-repeat: no-repeat;
 }
 

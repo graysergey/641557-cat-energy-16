@@ -197,6 +197,24 @@
       width: 133px;
     }
   }
+
+  .catalog__img-link {
+    margin-top: -122px;
+  }
+
+  .catalog__img {
+    &--small {
+      width: 324px;
+      height: 172px;
+      margin: 35px -37px 0 -38px;
+    }
+
+    &--big {
+      width: 324px;
+      height: 208px;
+      margin: 0 -37px 0 -38px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {

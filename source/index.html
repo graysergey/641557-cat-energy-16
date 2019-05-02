@@ -10,7 +10,11 @@
     <header class="page-header container">
       <nav class="page-header__nav">
         <a class="page-header__logo logo">
-          <img class="logo__img" width="191" height="38" src="./img/logo-mobile.svg" alt="Логотип компании CAT ENERGY">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="./img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/logo-tablet.svg">
+            <img class="logo__img" width="191" height="38" src="./img/logo-mobile.svg" alt="Логотип компании CAT ENERGY">
+          </picture>
         </a>
         <ul class="page-header__main-menu main-menu main-menu--page-index">
           <li class="main-menu__item"><a class="main-menu__link main-menu__link--page-index main-menu__link--active">Главная</a></li>
@@ -29,7 +33,11 @@
             Занялся собой? Займись котом!
           </p>
         </div>
-        <img class="offer__img" src="./img/index-can-mobile@1x.png" alt="Продукт" width="280" height="271">
+        <picture>
+          <source media="(min-width: 1300px)" srcset="./img/index-can-desktop@1x.png 1x, ./img/index-can-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.jpg 1x, ./img/index-can-tablet@2x.jpg 2x">
+          <img class="offer__img" src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x" alt="Продукт" width="280" height="271">
+        </picture>
         <a class="offer__link btn" href="form.html">Подобрать программу</a>
       </section>
 
@@ -92,7 +100,16 @@
           </div>
           <div class="example__slider slider">
             <div class="slider__before-wrapper">
-              <img class="slider__before-img" src="./img/before-mobile@1x.png" alt="до использования продукции" width="320" height="240">
+              <picture>
+                <source media="(min-width: 1300px)" srcset="./img/before-desktop@1x.png 1x, ./img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x">
+                <img class="slider__img slider__img--before" src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" alt="до использования продукции" width="320" height="240">
+              </picture>
+              <picture>
+                <source media="(min-width: 1300px)" srcset="./img/./img/after-desktop@1x.png 1x, ./img/./img/after-desktop@1x.png 2x">
+                <source media="(min-width: 768px)" srcset="./img/./img/after-tablet@1x.png 1x, ./img/./img/after-tablet@1x.png 2x">
+                <img class="slider__img slider__img--after" src="./img/after-mobile@1x.png" alt="до использования продукции" width="320" height="240">
+              </picture>
             </div>
             <div class="slider__after-img"></div>
             <div>
@@ -117,7 +134,13 @@
 
         <section class="map">
           <h2 class="visually-hidden">Мы на карте</h2>
-          <a class="map__link" href="https://www.google.com/maps"><img class="map__img" width="320" height="362" src="./img/bg-map-mobile@1x.png" alt="Мы на карте"></a>
+          <a class="map__link" href="https://www.google.com/maps">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="./img/bg-map-desktop@1x.png 1x, ./img/bg-map-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="./img/bg-map-tablet@1x.png 1x, ./img/bg-map-tablet@2x.png 2x">
+              <img class="map__img" width="320" height="362" src="./img/bg-map-mobile@1x.png" srcset="./img/bg-map-mobile@2x.png 2x" alt="Мы на карте">
+            </picture>
+          </a>
           <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653069.3199859555!2d80.13034990287345!3d7.593872665672541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri+Lanka!5e0!3m2!1sen!2sua!4v1554993446364!5m2!1sen!2sua" allowfullscreen></iframe>
         </section>
       </div>

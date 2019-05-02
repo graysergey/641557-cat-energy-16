@@ -43,9 +43,25 @@
 @media (min-width: $tablet-width) {
   .map {
     height: 396px;
+
+    &::after {
+      top: 50%;
+      width: 124px;
+      height: 106px;
+    }
   }
 
   .map__img {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map {
+    &::after {
+      left: auto;
+      right: 23.5%;
+      width: 113px;
+    }
   }
 }

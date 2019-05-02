@@ -6,6 +6,7 @@
 }
 
 .categories__item {
+  position: relative;
   padding: 25px 20px 22px 20px;
 
   background-color: $lightgray;
@@ -13,9 +14,45 @@
   &:not(:last-child) {
     margin: 0 0 20px 0;
   }
+
+  &::before {
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    width: 50px;
+    height: 50px;
+
+    content: "";
+    border-radius: 50%;
+    background-color: $lightgreen;
+  }
+
+  &::after {
+    position: absolute;
+    top: 22px;
+    left: 30px;
+    width: 35px;
+    height: 50px;
+
+    content: "";
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--slim {
+    &::after {
+      top: 35px;
+      left: 13px;
+      width: 67px;
+      height: 28px;
+
+      background-image: url("../img/icon-cat-pro.svg");
+    }
+  }
 }
 
 .categories__title {
+  position: relative;
   margin: 5px 0 29px 70px;
 
   font-family: "Oswald", "Arial", sans-serif;
@@ -70,14 +107,45 @@
 
 @media (min-width: $tablet-width) {
   .categories__item {
-    padding: 77px 280px 60px 55px;
+    padding: 77px 39% 60px 55px;
 
     &:not(:last-child) {
       margin: 0 0 30px 0;
     }
 
+    &::before {
+      left: auto;
+      top: 24%;
+      right: 9%;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &::after {
+      left: auto;
+      top: 21%;
+      right: 13%;
+
+      width: 140px;
+      height: 194px;
+    }
+
     &--slim {
-      padding-right: 312px;
+      padding-right: 44%;
+
+      &::before {
+        right: 8.5%;
+      }
+
+      &::after {
+        left: auto;
+        top: 36%;
+        right: 4%;
+
+        width: 268px;
+        height: 112px;
+      }
     }
   }
 
@@ -87,7 +155,7 @@
   }
 
   .categories__text {
-    margin: 0 0 60px 0;
+    margin: 0 0 42px 0;
     padding: 0;
 
     font-size: 16px;
@@ -117,6 +185,36 @@
     &:not(:last-child) {
       margin: 0;
     }
+
+    &::before {
+      right: auto;
+      top: 47px;
+      left: 52px;
+      transform: translateY(auto);
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      right: auto;
+      left: 65px;
+      top: 40px;
+
+      width: 100px;
+      height: 100px;
+    }
+
+    &--slim {
+      &::after {
+        right: auto;
+        left: 35px;
+        top: 70px;
+
+        width: 134px;
+        height: 56px;
+      }
+    }
   }
 
   .categories__title {
@@ -125,6 +223,6 @@
   }
 
   .categories__text {
-    margin: 0 0 30px 0;
+    margin: 0 0 12px 0;
   }
 }

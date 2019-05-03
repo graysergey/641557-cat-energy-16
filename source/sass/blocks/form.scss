@@ -1,6 +1,6 @@
 .form__submit {
   width: 100%;
-  margin: 10px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 .form__required-text {
@@ -12,6 +12,10 @@
   line-height: 16px;
   text-align: center;
   color: $text;
+}
+
+.form__advice {
+  margin: 0 -20px 0 -20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -34,7 +38,7 @@
   .form__submit {
     display: inline-block;
     width: 40.1%;
-    margin: 0 8% 72px 40px;
+    margin: 13px 8% 72px 40px;
     padding: 15px 27px;
 
     font-size: 20px;
@@ -80,6 +84,6 @@
 
   .form__submit {
     width: 46.7%;
-    margin: 0 6.4% 83px 0;
+    margin: 9px 6.4% 83px 0;
   }
 }

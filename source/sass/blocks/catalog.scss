@@ -203,16 +203,16 @@
   }
 
   .catalog__img {
+    margin: 35px -37px 0 -38px;
+
     &--small {
       width: 324px;
       height: 172px;
-      margin: 35px -37px 0 -38px;
     }
 
     &--big {
       width: 324px;
       height: 208px;
-      margin: 0 -37px 0 -38px;
     }
   }
 }
@@ -229,5 +229,17 @@
   .catalog__item {
     flex-basis: 18.84%;
     margin: 142px 40px 0;
+  }
+
+  .catalog__img {
+    &--small {
+      width: 245px;
+      height: 174px;
+    }
+
+    &--big {
+      width: 245px;
+      height: 208px;
+    }
   }
 }

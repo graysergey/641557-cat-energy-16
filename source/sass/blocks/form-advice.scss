@@ -1,14 +1,15 @@
 .form-advice {
   display: flex;
   flex-direction: column;
+  padding: 19px 20px 10px 20px;
 
-  padding: 25px 0 3px 0;
-  border: none;
+  border: 1px solid $lightgray;
 }
 
 .form-advice label {
   position: relative;
-  margin: 0 0 25px 46px;
+  margin-bottom: 8px;
+  padding: 8px 0 8px 46px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -17,10 +18,12 @@
   text-transform: uppercase;
   color: #222222;
 
+  cursor: pointer;
+
   &::before {
     position: absolute;
     top: 50%;
-    left: -46px;
+    left: 0;
     transform: translateY(-50%);
 
     display: block;
@@ -54,8 +57,8 @@
     &::after {
       position: absolute;
       top: 50%;
-      left: -37px;
-      transform: translateY(-50%);
+      left: 15px;
+      transform: translate(-50%, -50%);
 
       display: block;
       width: 12px;
@@ -73,24 +76,25 @@
   }
 
   &:focus + label {
-    opacity: 0.3;
+    outline: 1px solid rgba(205, 205, 205, 0.5);
   }
 }
 
 @media (min-width: $tablet-width) {
   .form-advice {
-    padding: 32px 0 3px 0;
+    padding: 23px 27px 12px 27px;
     border: 1px solid #e6e6e6;
   }
 
   .form-advice label {
-    margin: 0 0 33px 88px;
+    margin-bottom: 13px;
+    padding: 10px 0 10px 60px;
 
     font-size: 20px;
     line-height: 20px;
 
     &::before {
-      left: -60px;
+      left: 0;
 
       width: 40px;
       height: 40px;
@@ -99,7 +103,7 @@
 
   .form-advice input:checked + label {
     &::after {
-      left: -49px;
+      left: 20px;
 
       width: 18px;
       height: 18px;

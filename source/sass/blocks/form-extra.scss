@@ -13,7 +13,7 @@
 
 .form-extra__title {
   align-self: flex-start;
-  margin: 0 116px 39px 0;
+  margin: 0 116px 29px 0;
   padding: 0 15px 0 0;
 
 
@@ -42,7 +42,8 @@
 
 .form-extra label {
   position: relative;
-  margin: 0 0 25px 46px;
+  margin: 0 0 5px 0;
+  padding: 10px 0 10px 46px;
 
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
@@ -51,10 +52,12 @@
   text-transform: uppercase;
   color: #222222;
 
+  cursor: pointer;
+
   &::before {
     position: absolute;
     top: 50%;
-    left: -46px;
+    left: 0;
     transform: translateY(-50%);
 
     display: block;
@@ -86,8 +89,8 @@
     &::after {
       position: absolute;
       top: 50%;
-      left: -41px;
-      transform: translateY(-50%) rotate(-47deg);
+      left: 15px;
+      transform: translate(-50%, -50%) rotate(-47deg);
 
       display: block;
       width: 21px;
@@ -106,7 +109,7 @@
   }
 
   &:focus + label {
-    opacity: 0.3;
+    outline: 1px solid rgba(205, 205, 205, 0.5);
   }
 }
 
@@ -118,20 +121,22 @@
   }
 
   .form-extra__title {
-    margin: 0 116px 65px 0;
+    margin: 0 116px 55px 0;
 
     font-size: 36px;
     line-height: 36px;
   }
 
   .form-extra label {
-    width: 36%;
-    margin: 0 0 54px 60px;
+    width: 45.5%;
+    margin: 0 0 33px 0;
+    padding: 10px 0 10px 59px;
+
     font-size: 20px;
     line-height: 20px;
 
     &::before {
-      left: -60px;
+      left: 0;
 
       width: 40px;
       height: 40px;
@@ -140,13 +145,17 @@
 
   .form-extra input:checked + label {
     &::after {
-      left: -49px;
+      left: 20px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .form-extra label {
-    width: 15.2%;
+    width: 20%;
+  }
+
+  .form-extra__title {
+    margin-bottom: 57px;
   }
 }

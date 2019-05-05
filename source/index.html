@@ -7,9 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body page-body--previvev">
-    <div style="display: none;">
+    <!-- <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
-    </div>
+    </div> -->
     <header class="page-header container">
       <nav class="page-header__nav">
         <a class="page-header__logo logo">
@@ -37,6 +37,9 @@
           </p>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="./img/index-can-desktop@1x.webp 1x, ./img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.webp 1x, ./img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/index-can-mobile@1x.webp 1x, ./img/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="./img/index-can-desktop@1x.png 1x, ./img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.jpg 1x, ./img/index-can-tablet@2x.jpg 2x">
           <img class="offer__img" src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x" alt="Продукт" width="280" height="271">
@@ -104,13 +107,19 @@
           <div class="example__slider slider">
             <div class="slider__before-wrapper">
               <picture>
+                <source type="image/webp" media="(min-width: 1300px)" srcset="./img/before-desktop@1x.webp 1x, ./img/before-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/before-tablet@1x.webp 1x, ./img/before-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/before-mobile@1x.webp 1x, ./img/before-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="./img/before-desktop@1x.png 1x, ./img/before-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x">
                 <img class="slider__img slider__img--before" src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" alt="до использования продукции" width="320" height="240">
               </picture>
               <picture>
-                <source media="(min-width: 1300px)" srcset="./img/./img/after-desktop@1x.png 1x, ./img/./img/after-desktop@1x.png 2x">
-                <source media="(min-width: 768px)" srcset="./img/./img/after-tablet@1x.png 1x, ./img/./img/after-tablet@1x.png 2x">
+                <source type="image/webp" media="(min-width: 1300px)" srcset="./img/after-desktop@1x.webp 1x, ./img/after-desktop@1x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/after-tablet@1x.webp 1x, ./img/after-tablet@1x.webp 2x">
+                <source type="image/webp" srcset="./img/after-mobile@1x.webp 1x, ./img/after-mobile@1x.webp 2x">
+                <source media="(min-width: 1300px)" srcset="./img/after-desktop@1x.png 1x, ./img/after-desktop@1x.png 2x">
+                <source media="(min-width: 768px)" srcset="./img/after-tablet@1x.png 1x, ./img/after-tablet@1x.png 2x">
                 <img class="slider__img slider__img--after" src="./img/after-mobile@1x.png" alt="до использования продукции" width="320" height="240">
               </picture>
             </div>
@@ -139,6 +148,9 @@
           <h2 class="visually-hidden">Мы на карте</h2>
           <a class="map__link" href="https://www.google.com/maps">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="./img/bg-map-desktop@1x.webp 1x, ./img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/bg-map-tablet@1x.webp 1x, ./img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/bg-map-mobile@1x.webp 1x, ./img/bg-map-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="./img/bg-map-desktop@1x.png 1x, ./img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="./img/bg-map-tablet@1x.png 1x, ./img/bg-map-tablet@2x.png 2x">
               <img class="map__img" width="320" height="362" src="./img/bg-map-mobile@1x.png" srcset="./img/bg-map-mobile@2x.png 2x" alt="Мы на карте">
@@ -156,19 +168,22 @@
         </a>
 
         <ul class="page-footer__social social">
-          <li class="social__item social__item--vkontakte">
+          <li class="social__item">
             <a class="social__link" href="vk.com">
-              <img src="./img/icon-vk-mobile.svg" alt="мы в конткате" width="22" height="12">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg class="social__icon social__icon--vkontakte" width="22" height="12"><use xlink:href="./img/sprite.svg#icon-vk"></use></svg>
             </a>
           </li>
-          <li class="social__item social__item--instagram">
+          <li class="social__item">
             <a class="social__link" href="fb.com">
-              <img src="./img/icon-insta-mobile.svg" alt="мы в инстаграме" width="16" height="16">
+              <span class="visually-hidden">Инстаграм</span>
+              <svg class="social__icon social__icon--instagram" width="16" height="16"><use xlink:href="./img/sprite.svg#icon-insta"></use></svg>
             </a>
           </li>
-          <li class="social__item social__item--facebook">
+          <li class="social__item">
             <a class="social__link" href="instagram.com">
-              <img src="./img/icon-fb-mobile.svg" alt="мы в фейсбуке" width="10" height="19">
+              <span class="visually-hidden">Фейсбук</span>
+              <svg class="social__icon social__icon--facebook" width="10" height="19"><use xlink:href="./img/sprite.svg#icon-fb"></use></svg>
             </a>
           </li>
         </ul>
@@ -176,7 +191,7 @@
         <div class="page-footer__copyright copyright">
           <a class="copyright__company" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="./img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
+            <svg width="27" height="34"><use xlink:href="./img/sprite.svg#icon-htmlacademy"></use></svg>
           </a>
         </div>
       </div>

@@ -1,14 +1,18 @@
 .main-menu {
-  display: flex;
+  display: none;
   flex-direction: column;
+  z-index: 10;
 
   width: 100%;
   margin: 0;
   padding: 0;
 
   list-style: none;
-
   background-color: #ffffff;
+}
+
+.main-menu--show {
+  display: flex;
 }
 
 .main-menu__link {
@@ -44,6 +48,7 @@
 
 @media (min-width: $tablet-width) {
   .main-menu {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;

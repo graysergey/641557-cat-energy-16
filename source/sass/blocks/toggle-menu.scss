@@ -1,13 +1,73 @@
 .toggle-menu {
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 24px;
+  line-height: 25px;
 
   margin: 0;
   padding: 0;
 
+  font-size: 0;
   border: none;
-  background-color: #111111;
+  background: transparent;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.toggle-menu__symbol {
+  position: relative;
+  vertical-align: middle;
+
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+
+  background-color: #222222;
+  transition: 0.3s;
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 2px;
+
+    content: "";
+    background-color: #222222;
+    transform-origin: 50% 50%;
+  }
+
+  &::before {
+    top: -7px;
+    transition: 0.3s, top 0.3s 0.3s;
+  }
+
+  &::after {
+    top: 7px;
+    transition: 0.3s, top 0.3s 0.3s;
+  }
+}
+
+.toggle-menu--close {
+  & .toggle-menu__symbol {
+    background: transparent;
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+
+    &::before {
+      transform: rotate3d(0, 0, 1, 45deg);
+      transition: 0.3s, transform 0.3s 0.3s;
+    }
+
+    &::after {
+      transform: rotate3d(0, 0, 1, -45deg);
+      transition: 0.3s, transform 0.3s 0.3s;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {

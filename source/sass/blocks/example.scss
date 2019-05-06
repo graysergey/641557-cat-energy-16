@@ -41,9 +41,14 @@
   margin: 0 auto;
 }
 
+.example__slider-control {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .example {
-    background: linear-gradient(to bottom, #ffffff 620px, $lightgray 620px, $lightgray 100%);
+    position: relative;
+    overflow: hidden;
   }
 
   .example__wrapper {
@@ -68,6 +73,24 @@
   .example__result {
     margin: 0;
   }
+
+  .exemple__slider-wrapper {
+    margin: 0 -30px;
+  }
+
+  .example__column {
+    margin: 0 0 70px 0;
+  }
+
+  .example__slider-control {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    z-index: 10;
+    transform: translateX(-50%);
+
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -88,5 +111,9 @@
   .example__text {
     max-width: 438px;
     margin: 70px 0 68px 0;
+  }
+
+  .exemple__slider-wrapper {
+    display: flex;
   }
 }

@@ -165,36 +165,42 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
-        <a class="page-footer__logo logo-footer">
-          <img width="128" height="24" src="./img/logo-footer.svg" alt="Логотип компании">
-        </a>
+        <div class="page-footer__row">
+          <div class="page-footer__column">
+            <a class="page-footer__logo logo-footer">
+              <img width="128" height="24" src="./img/logo-footer.svg" alt="Логотип компании">
+            </a>
+          </div>
 
-        <ul class="page-footer__social social">
-          <li class="social__item">
-            <a class="social__link" href="vk.com">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg class="social__icon social__icon--vkontakte" width="22" height="12"><use xlink:href="./img/sprite.svg#icon-vk"></use></svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="fb.com">
-              <span class="visually-hidden">Инстаграм</span>
-              <svg class="social__icon social__icon--instagram" width="16" height="16"><use xlink:href="./img/sprite.svg#icon-insta"></use></svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link" href="instagram.com">
-              <span class="visually-hidden">Фейсбук</span>
-              <svg class="social__icon social__icon--facebook" width="10" height="19"><use xlink:href="./img/sprite.svg#icon-fb"></use></svg>
-            </a>
-          </li>
-        </ul>
+          <div class="page-footer__column">
+            <ul class="page-footer__social social">
+              <li class="social__item">
+                <a class="social__link" href="vk.com">
+                  <span class="visually-hidden">Вконтакте</span>
+                  <svg class="social__icon social__icon--vkontakte" width="22" height="12"><use xlink:href="./img/sprite.svg#icon-vk"></use></svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="fb.com">
+                  <span class="visually-hidden">Инстаграм</span>
+                  <svg class="social__icon social__icon--instagram" width="16" height="16"><use xlink:href="./img/sprite.svg#icon-insta"></use></svg>
+                </a>
+              </li>
+              <li class="social__item social__item--indent">
+                <a class="social__link" href="instagram.com">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <svg class="social__icon social__icon--facebook" width="10" height="19"><use xlink:href="./img/sprite.svg#icon-fb"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__company" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg width="27" height="34"><use xlink:href="./img/sprite.svg#icon-htmlacademy"></use></svg>
-          </a>
+          <div class="page-footer__column">
+            <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="copyright__name">HTML Academy</span>
+              <svg class="copyright__icon" width="27" height="34"><use xlink:href="./img/sprite.svg#icon-htmlacademy"></use></svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

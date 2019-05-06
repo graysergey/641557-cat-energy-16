@@ -3,7 +3,7 @@
   padding: 20px 0;
 }
 
-.copyright__company {
+.copyright__name {
   padding: 10px 0;
 
   font-family: "Arial", "Tahoma", sans-serif;
@@ -12,16 +12,20 @@
   color: $text;
 }
 
-.copyright__logo {
+.copyright__icon {
   display: block;
   margin: 0 0 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
-    align-self: center;
+    justify-content: flex-end;
 
     min-width: 165px;
-    padding: 55px 0;
+    padding: 30px 0 25px;
+  }
+
+  .copyright__icon {
+    margin: 0 0 0 23px;
   }
 }

@@ -52,7 +52,7 @@
   }
 
   .example__wrapper {
-    height: 1082px;
+    min-height: 1082px;
     border-top: 1px solid #e6e6e6;
     background: transparent;
   }
@@ -94,13 +94,11 @@
 }
 
 @media (min-width: $desktop-width) {
-  .example {
-    background: linear-gradient(to bottom, #ffffff 189px, $lightgray 189px, $lightgray 100%);
-  }
-
   .example__wrapper {
     height: auto;
+    min-height: 650px;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .example__title {
@@ -114,6 +112,15 @@
   }
 
   .exemple__slider-wrapper {
-    display: flex;
+    margin: 0 -30px 0 0;
+  }
+
+  .example__column {
+    margin: 0;
+  }
+
+  .example__slider-control {
+    left: 53.5%;
+    transform: translateX(-50%);
   }
 }

@@ -174,3 +174,30 @@
     height: 517px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .slider {
+    height: 650px;
+
+    &::before {
+      z-index: -1;
+
+      width: 250%;
+      margin: 0 0 0 -120%;
+    }
+  }
+
+  .slider__before-wrapper,
+  .slider__after-wrapper {
+    height: 650px;
+  }
+
+  .slider__before-wrapper {
+    width: 53.5%;
+    background: linear-gradient(to bottom, #ffffff 185px, $lightgray 185px, $lightgray 100%);
+  }
+
+  .slider__after-wrapper {
+    background: linear-gradient(to bottom, #ffffff 185px, #eaeaea 185px, #eaeaea 100%);
+  }
+}

@@ -7,6 +7,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main {
+    overflow: hidden;
+  }
+
   .page-main__categories {
     margin: 0 auto 45px auto;
   }
@@ -31,5 +35,9 @@
 
   .page-main--form {
     padding: 22px 0 0 0;
+  }
+
+  .page-main__extra-products {
+    margin-bottom: 86px;
   }
 }

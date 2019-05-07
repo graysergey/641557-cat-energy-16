@@ -23,7 +23,7 @@
 .map__img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: -38px 0 0 0;
 }
 
@@ -33,7 +33,7 @@
   left: 0;
   z-index: 10;
 
-  display: none;
+  // display: none;
   width: 100%;
   height: 100%;
 
@@ -60,7 +60,7 @@
   .map {
     &::after {
       left: auto;
-      right: 23.5%;
+      right: 19%;
       width: 113px;
     }
   }

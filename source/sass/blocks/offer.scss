@@ -85,9 +85,8 @@
 
   .offer__img {
     position: absolute;
-    left: 50%;
+    right: 0;
     bottom: 0;
-    transform: translateX(-50%);
 
     width: 709px;
     height: 609px;
@@ -127,10 +126,10 @@
 
   .offer__img {
     top: 0;
-    left: 59%;
+    left: 40%;
 
     width: 552px;
     height: 499px;
-    margin: -25px 0 0 0;
+    margin: -20px 0 0 0;
   }
 }

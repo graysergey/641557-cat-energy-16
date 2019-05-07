@@ -27,6 +27,19 @@
 .social__link {
   display: inline-block;
   vertical-align: middle;
+
+  &:hover .social__icon {
+    fill: $lightgreen;
+  }
+
+  &:active .social__icon {
+    fill: $lightgreen;
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {

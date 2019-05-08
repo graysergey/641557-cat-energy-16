@@ -62,10 +62,23 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-comments {
+    display: block;
+  }
+
   .form-comments__title {
-    margin: 0 138px 76px 0;
+    display: inline-block;
+
+    margin: 0 0 76px -40px;
+    padding: 0 40px;
     font-size: 36px;
     line-height: 36px;
+
+    &::after {
+      top: 35px;
+      right: -70px;
+      width: 110vw;
+    }
   }
 
   .form-comments__textarea {
@@ -74,5 +87,14 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-comments__title {
+    &::after {
+      width: 120vw;
+      right: -20vw;
+    }
   }
 }

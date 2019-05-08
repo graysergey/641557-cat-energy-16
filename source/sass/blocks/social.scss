@@ -13,7 +13,11 @@
 }
 
 .social__item {
-  margin: 0 17px;
+  margin: 0 18px;
+
+  &--indent {
+    margin: 0 24px;
+  }
 }
 
 .social__item--facebook {
@@ -23,11 +27,49 @@
 .social__link {
   display: inline-block;
   vertical-align: middle;
+
+  &:hover .social__icon {
+    fill: $lightgreen;
+  }
+
+  &:active .social__icon {
+    fill: $lightgreen;
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: #666666;
 }
 
 @media (min-width: $tablet-width) {
   .social {
-    width: auto;
-    padding: 60px 0;
+    padding: 30px 0;
+    border: none;
+  }
+
+  .social__item {
+    margin: 0 12px;
+
+    &--indent {
+      margin: 0 22px;
+    }
+  }
+
+  .social__icon {
+    &--vkontakte {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--facebook {
+      width: 14px;
+      height: 28px;
+    }
   }
 }

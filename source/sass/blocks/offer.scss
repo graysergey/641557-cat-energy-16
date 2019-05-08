@@ -54,7 +54,7 @@
   .offer {
     position: relative;
     min-height: 608px;
-    padding: 55px 0 0 120px;
+    padding: 59px 0 0 120px;
   }
 
   .offer__text-wrapper {
@@ -85,8 +85,9 @@
 
   .offer__img {
     position: absolute;
-    right: 0;
+    left: 50%;
     bottom: 0;
+    transform: translateX(-50%);
 
     width: 709px;
     height: 609px;
@@ -109,7 +110,6 @@
   .offer {
     max-width: 1300px;
     padding-top: 57px;
-    outline: 1px dashed lightblue;
   }
 
   .offer__title {
@@ -127,10 +127,11 @@
 
   .offer__img {
     top: 0;
-    left: 40%;
+    left: 59%;
+    z-index: 1;
 
     width: 552px;
     height: 499px;
-    margin: -20px 0 0 0;
+    margin: -25px 0 0 0;
   }
 }

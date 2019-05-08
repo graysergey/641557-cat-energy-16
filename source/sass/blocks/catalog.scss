@@ -154,7 +154,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog__title {
-    padding: 56px 0 24px 0;
+    padding: 60px 0 24px 0;
     font-size: 60px;
     line-height: 60px;
 
@@ -180,8 +180,16 @@
       background-color: $lightgray;
     }
 
-    &.catalog__item--more {
+    &--more {
+      padding-top: 55px;
       outline: 1px solid #cdcdcd;
+
+      &::before {
+        width: 60px;
+        height: 60px;
+
+        margin-bottom: 49px;
+      }
     }
 
     &::after {
@@ -189,21 +197,38 @@
     }
   }
 
+  .catalog__title-link {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px 0;
+  }
+
   .catalog__item-title {
+    margin: 0;
     font-size: 20px;
     text-align: center;
 
     &:not(.catalog__item-title--more) {
       width: 133px;
     }
+
+    &--more {
+      width: 70%;
+      margin-bottom: 20px;
+    }
   }
 
   .catalog__img-link {
     margin-top: -122px;
+    margin-bottom: 35px;
+
+    &--small {
+      margin-top: -86px;
+    }
   }
 
   .catalog__img {
-    margin: 35px -37px 0 -38px;
+    margin: 0 -37px 0 -38px;
 
     &--small {
       width: 324px;
@@ -215,11 +240,42 @@
       height: 208px;
     }
   }
+
+  .catalog__table-wrapper {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .catalog__table {
+    & td {
+      padding: 7px 0 8px;
+    }
+
+    & tr {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .catalog__property,
+  .catalog__value {
+    font-size: 16px;
+  }
+
+  .catalog__text-more {
+    width: 70%;
+    margin-bottom: 91px;
+
+    font-size: 16px;
+  }
+
+  .catalog__link--more {
+    margin-top: auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .catalog__title {
-    padding-top: 20px;
+    padding: 20px 0 27px;
   }
 
   .catalog__list {
@@ -227,8 +283,10 @@
   }
 
   .catalog__item {
+    flex-direction: column;
     flex-basis: 18.84%;
-    margin: 142px 40px 0;
+    margin: 140px 40px 0;
+    padding: 40 38px;
   }
 
   .catalog__img {
@@ -241,5 +299,26 @@
       width: 245px;
       height: 208px;
     }
+  }
+
+  .catalog__img-link {
+    margin-bottom: 33px;
+  }
+
+  .catalog__table-wrapper {
+    margin-bottom: 31px;
+  }
+
+  .catalog__item-title {
+    &--more {
+      width: 100%;
+    }
+  }
+
+  .catalog__text-more {
+    width: 100%;
+    margin-bottom: 82px;
+
+    line-height: 20px;
   }
 }

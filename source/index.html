@@ -7,9 +7,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body page-body--previvev">
-    <div style="display: none;">
+    <!-- <div style="display: none;">
       <include src="build/img/sprite.svg"></include>
-    </div>
+    </div> -->
     <header class="page-header container">
       <nav class="page-header__nav">
         <a class="page-header__logo logo">
@@ -25,10 +25,12 @@
           <li class="main-menu__item"><a class="main-menu__link main-menu__link--page-index" href="form.html">Подбор программы</a></li>
         </ul>
       </nav>
-      <button class="page-header__toggle-menu toggle-menu" type="button" aria-label="Переключатель открытия и закрытия меню"></button>
+      <button class="page-header__toggle-menu toggle-menu" type="button" aria-label="Переключатель открытия и закрытия меню">
+        <span class="toggle-menu__symbol"></span>
+      </button>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main--index">
       <section class="page-main__offer offer">
         <div class="offer__text-wrapper">
           <h1 class="offer__title">Функциональное питание для котов</h1>
@@ -37,6 +39,9 @@
           </p>
         </div>
         <picture>
+          <source type="image/webp" media="(min-width: 1300px)" srcset="./img/index-can-desktop@1x.webp 1x, ./img/index-can-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.webp 1x, ./img/index-can-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="./img/index-can-mobile@1x.webp 1x, ./img/index-can-mobile@2x.webp 2x">
           <source media="(min-width: 1300px)" srcset="./img/index-can-desktop@1x.png 1x, ./img/index-can-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="./img/index-can-tablet@1x.jpg 1x, ./img/index-can-tablet@2x.jpg 2x">
           <img class="offer__img" src="./img/index-can-mobile@1x.png" srcset="./img/index-can-mobile@2x.png 2x" alt="Продукт" width="280" height="271">
@@ -101,28 +106,44 @@
               </tbody>
             </table>
           </div>
-          <div class="example__slider slider">
-            <div class="slider__before-wrapper">
-              <picture>
-                <source media="(min-width: 1300px)" srcset="./img/before-desktop@1x.png 1x, ./img/before-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x">
-                <img class="slider__img slider__img--before" src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" alt="до использования продукции" width="320" height="240">
-              </picture>
-              <picture>
-                <source media="(min-width: 1300px)" srcset="./img/./img/after-desktop@1x.png 1x, ./img/./img/after-desktop@1x.png 2x">
-                <source media="(min-width: 768px)" srcset="./img/./img/after-tablet@1x.png 1x, ./img/./img/after-tablet@1x.png 2x">
-                <img class="slider__img slider__img--after" src="./img/after-mobile@1x.png" alt="до использования продукции" width="320" height="240">
-              </picture>
-            </div>
-            <div class="slider__after-img"></div>
-            <div>
-              <input type="radio" id="slider-before" name="example-before">
-              <label for="slider-before">Было</label>
+          <div class="exemple__slider-wrapper">
+            <div class="example__slider slider">
 
-              <input type="radio" id="slider-after" name="example-after">
-              <label for="slider-after">Стало</label>
+              <input class="visually-hidden slider__input-mobile slider__input-mobile--before" type="radio" id="slider__btn-mobile-before" name="exemple-slider" checked>
+              <input class="visually-hidden slider__input-mobile slider__input-mobile--after" type="radio" id="slider__btn-mobile-after" name="exemple-slider">
 
-              <div class="slider__bar"></div>
+                <div class="slider__controls-mobile">
+                  <label class="slider__btn-mobile slider__btn-mobile--before" for="slider__btn-mobile-before">Было</label>
+                  <label class="slider__btn-mobile slider__btn-mobile--after" for="slider__btn-mobile-after">Стало</label>
+                  <div class="slider__bar-mobile"></div>
+                </div>
+              <div class="slider__before-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="./img/before-desktop@1x.webp 1x, ./img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/before-tablet@1x.webp 1x, ./img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="./img/before-mobile@1x.webp 1x, ./img/before-mobile@2x.webp 2x">
+                  <source media="(min-width: 1300px)" srcset="./img/before-desktop@1x.png 1x, ./img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="./img/before-tablet@1x.png 1x, ./img/before-tablet@2x.png 2x">
+                  <img class="slider__img slider__img--before" src="./img/before-mobile@1x.png" srcset="./img/before-mobile@2x.png 2x" alt="до использования продукции" width="320" height="240">
+                </picture>
+              </div>
+              <div class="slider__after-wrapper">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="./img/after-desktop@1x.webp 1x, ./img/after-desktop@1x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="./img/after-tablet@1x.webp 1x, ./img/after-tablet@1x.webp 2x">
+                  <source type="image/webp" srcset="./img/after-mobile@1x.webp 1x, ./img/after-mobile@1x.webp 2x">
+                  <source media="(min-width: 1300px)" srcset="./img/after-desktop@1x.png 1x, ./img/after-desktop@1x.png 2x">
+                  <source media="(min-width: 768px)" srcset="./img/after-tablet@1x.png 1x, ./img/after-tablet@1x.png 2x">
+                  <img class="slider__img slider__img--after" src="./img/after-mobile@1x.png" alt="до использования продукции" width="320" height="240">
+                </picture>
+              </div>
+              <div class="example__slider-control slider-control">
+                <button class="slider-control__btn">Было</button>
+                <div class="slider-control__progress-bar">
+                  <button class="slider-control__toggle"></button>
+                </div>
+                <button class="slider-control__btn">Стало</button>
+              </div>
             </div>
           </div>
         </div>
@@ -139,48 +160,61 @@
           <h2 class="visually-hidden">Мы на карте</h2>
           <a class="map__link" href="https://www.google.com/maps">
             <picture>
+              <source type="image/webp" media="(min-width: 1300px)" srcset="./img/bg-map-desktop@1x.webp 1x, ./img/bg-map-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./img/bg-map-tablet@1x.webp 1x, ./img/bg-map-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="./img/bg-map-mobile@1x.webp 1x, ./img/bg-map-mobile@2x.webp 2x">
               <source media="(min-width: 1300px)" srcset="./img/bg-map-desktop@1x.png 1x, ./img/bg-map-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="./img/bg-map-tablet@1x.png 1x, ./img/bg-map-tablet@2x.png 2x">
               <img class="map__img" width="320" height="362" src="./img/bg-map-mobile@1x.png" srcset="./img/bg-map-mobile@2x.png 2x" alt="Мы на карте">
             </picture>
           </a>
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1653069.3199859555!2d80.13034990287345!3d7.593872665672541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri+Lanka!5e0!3m2!1sen!2sua!4v1554993446364!5m2!1sen!2sua" allowfullscreen></iframe>
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3997.198230653264!2d30.323083!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1suk!2sru!4v1557218147742!5m2!1suk!2sru" allowfullscreen></iframe>
         </section>
       </div>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper container">
-        <a class="page-footer__logo logo-footer">
-          <img width="128" height="24" src="./img/logo-footer.svg" alt="Логотип компании">
-        </a>
+        <div class="page-footer__row">
+          <div class="page-footer__column">
+            <a class="page-footer__logo logo-footer" href="index.html">
+              <img width="128" height="24" src="./img/logo-footer.svg" alt="Логотип компании">
+            </a>
+          </div>
 
-        <ul class="page-footer__social social">
-          <li class="social__item social__item--vkontakte">
-            <a class="social__link" href="vk.com">
-              <img src="./img/icon-vk-mobile.svg" alt="мы в конткате" width="22" height="12">
-            </a>
-          </li>
-          <li class="social__item social__item--instagram">
-            <a class="social__link" href="fb.com">
-              <img src="./img/icon-insta-mobile.svg" alt="мы в инстаграме" width="16" height="16">
-            </a>
-          </li>
-          <li class="social__item social__item--facebook">
-            <a class="social__link" href="instagram.com">
-              <img src="./img/icon-fb-mobile.svg" alt="мы в фейсбуке" width="10" height="19">
-            </a>
-          </li>
-        </ul>
+          <div class="page-footer__column">
+            <ul class="page-footer__social social">
+              <li class="social__item">
+                <a class="social__link" href="vk.com">
+                  <span class="visually-hidden">Вконтакте</span>
+                  <svg class="social__icon social__icon--vkontakte" width="22" height="12"><use xlink:href="./img/sprite.svg#icon-vk"></use></svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="fb.com">
+                  <span class="visually-hidden">Инстаграм</span>
+                  <svg class="social__icon social__icon--instagram" width="16" height="16"><use xlink:href="./img/sprite.svg#icon-insta"></use></svg>
+                </a>
+              </li>
+              <li class="social__item social__item--indent">
+                <a class="social__link" href="instagram.com">
+                  <span class="visually-hidden">Фейсбук</span>
+                  <svg class="social__icon social__icon--facebook" width="10" height="19"><use xlink:href="./img/sprite.svg#icon-fb"></use></svg>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="page-footer__copyright copyright">
-          <a class="copyright__company" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-            <img src="./img/htmlacademy.svg" alt="Логотип академии" width="27" height="34">
-          </a>
+          <div class="page-footer__column">
+            <a class="copyright" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="copyright__name">HTML Academy</span>
+              <svg class="copyright__icon" width="27" height="34"><use xlink:href="./img/sprite.svg#icon-htmlacademy"></use></svg>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
 
+    <script src="js/main.js"></script>
   </body>
 </html>

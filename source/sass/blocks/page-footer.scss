@@ -2,14 +2,25 @@
   background-color: $lightgray;
 }
 
-.page-footer__wrapper {
-  display: flex;
-  flex-direction: column;
-}
-
 @media (min-width: $tablet-width) {
-  .page-footer__wrapper {
-    flex-direction: row;
+  .page-footer {
+    padding: 30px 0;
+  }
+
+  .page-footer__row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     justify-content: space-between;
+
+    margin: 0 -30px;
+  }
+
+  .page-footer__column {
+    display: flex;
+    flex-basis: 33.3%;
+    max-width: 33.3%;
+
+    padding: 0 30px;
   }
 }

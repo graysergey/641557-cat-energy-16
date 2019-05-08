@@ -1,5 +1,5 @@
 .logo {
-  display: block;
+  display: inline-block;
 
   &:hover {
     opacity: 0.8;
@@ -15,7 +15,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .logo {
+  .logo__img {
+    display: block;
+    width: 173px;
     height: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__img {
+    width: 202px;
+    height: 59px;
   }
 }

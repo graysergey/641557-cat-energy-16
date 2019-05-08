@@ -24,12 +24,13 @@ a {
   box-sizing: inherit;
 }
 
-input[type="text"]:required:active,
-input[type="text"]:required:focus,
-input[type="email"]:required:active,
-input[type="email"]:required:focus,
-input[type="tel"]:required:active,
-input[type="tel"]:required:focus {
+input::placeholder {
+  color: #444444;
+}
+
+input[type="text"]:invalid:focus,
+input[type="email"]:invalid:focus,
+input[type="tel"]:invalid:focus {
   outline: 2px solid $error;
 }
 

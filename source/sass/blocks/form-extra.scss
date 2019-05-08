@@ -26,7 +26,7 @@
 
   &::after {
     position: absolute;
-    top: 40px;
+    top: 38px;
     right: -20px;
     z-index: -1;
 
@@ -114,6 +114,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .form-extra {
+    padding-top: 22px;
+  }
+
   .form-extra__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -121,10 +125,18 @@
   }
 
   .form-extra__title {
-    margin: 0 116px 55px 0;
+    display: inline-block;
+    margin: 0 0 55px -40px;
+    padding: 0 40px;
 
     font-size: 36px;
     line-height: 36px;
+
+    &::after {
+      top: 44px;
+      right: -70px;
+      width: 110vw;
+    }
   }
 
   .form-extra label {
@@ -157,5 +169,11 @@
 
   .form-extra__title {
     margin-bottom: 57px;
+
+    &::after {
+      top: 45px;
+      width: 120vw;
+      right: -20vw;
+    }
   }
 }

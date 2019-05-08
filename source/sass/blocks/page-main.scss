@@ -8,7 +8,9 @@
 
 @media (min-width: $tablet-width) {
   .page-main {
-    overflow: hidden;
+    &:not(.page-main--index) {
+      overflow: hidden;
+    }
   }
 
   .page-main__categories {

@@ -118,16 +118,15 @@ gulp.task("copy_image", function () {
 });
 
 gulp.task("compressjs", function (cb) {
-    gulp.src("source/js/main.js")
-      .pipe(plumber());
   pump([
       gulp.src("source/js/*.js"),
-      gulp.dest("build/js"),
       babel({
-        presets: ['@babel/env']
+        presets: ["@babel/env"]
       }),
-      rename("main.min.js"),
-      uglify(),
+    uglify(),
+    rename(function (path) {
+        path.basename = path.basename + ".min";
+    }),
       gulp.dest("build/js")
     ],
     cb
@@ -154,7 +153,8 @@ gulp.task("build", gulp.series(
   "css",
   "sprite",
   "html",
-  "images",
+  // "images",
+  "copy_image",
   "webp",
   "compressjs"
 ));

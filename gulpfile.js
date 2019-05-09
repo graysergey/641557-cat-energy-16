@@ -153,8 +153,7 @@ gulp.task("build", gulp.series(
   "css",
   "sprite",
   "html",
-  // "images",
-  "copy_image",
+  "images",
   "webp",
   "compressjs"
 ));

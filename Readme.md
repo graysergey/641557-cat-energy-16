@@ -6,7 +6,7 @@
 ---
 
 Информация по запуску:<br>
-_`download` **- скачайте проект .**_<br>
+_`git clone git@github.com:graysergey/641557-cat-energy-16.git` **- скачайте проект .**_<br>
 _`npm i --save-dev` **- установите зависимости .**_<br>
 _`npm start` **- запустите режим разработки .**_
 

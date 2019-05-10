@@ -1,14 +1,14 @@
-# «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# [«Кэт энерджи»](https://graysergey.github.io/Cat-energy). [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 
 ## Опубликованный проект можно посмотреть тут: [«Кэт энерджи»](https://graysergey.github.io/Cat-energy).
 
 ---
 
-Информация по запуску:
-`download` **- скачайте проект .**
-`npm i --save-dev` **- установите зависимости .**
-`npm start` **- запустите режим разработки .**
+Информация по запуску:<br>
+_`download` **- скачайте проект .**_<br>
+_`npm i --save-dev` **- установите зависимости .**_<br>
+_`npm start` **- запустите режим разработки .**_
 
 
 

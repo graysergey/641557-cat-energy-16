@@ -90,7 +90,7 @@
 
     background-color: transparent;
 
-    &--page-index {
+    &--index {
       &::before {
         position: absolute;
         top: 0;
@@ -109,12 +109,12 @@
     padding: 10px 17px;
     font-size: 20px;
 
-    &--page-index {
+    &--index {
       color: #ffffff;
     }
   }
 
-  .main-menu__link--page-index.main-menu__link--active {
+  .main-menu__link--index.main-menu__link--active {
     &::after {
       background-color: #ffffff;
     }

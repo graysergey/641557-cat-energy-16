@@ -68,6 +68,11 @@
   }
 }
 
+.catalog__img-link {
+  flex-grow: 1;
+  max-width: 50%;
+}
+
 .catalog__item-title {
   width: 75px;
   margin: 0 0 12px 0;
@@ -100,6 +105,8 @@
 
 .catalog__table-wrapper {
   flex-grow: 1;
+  max-width: 50%;
+  // width: 50%;
 }
 
 .catalog__table {
@@ -219,6 +226,10 @@
   }
 
   .catalog__img-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
     margin-top: -122px;
     margin-bottom: 35px;
 
@@ -243,6 +254,7 @@
 
   .catalog__table-wrapper {
     width: 100%;
+    max-width: 100%;
     margin-bottom: 32px;
   }
 
